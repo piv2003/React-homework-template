@@ -11,7 +11,8 @@
 //       <Section title="Лучшее"></Section>
 //     </div>
 //   );
-// }
+//   }
+//   }
 
 import paintings from './paintings.json';
 import PaintingList from 'components/PaintingList';
