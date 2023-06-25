@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import ReactDOM from 'react-dom';
+import ReactDOM from 'react-dom/client';
+import './index.css';
 
 class Counter extends Component {
   static defaultProps = {
@@ -18,3 +19,11 @@ class Counter extends Component {
     );
   }
 }
+
+// ReactDOM.render(<Counter step={5} />, document.getElementById('root'));
+
+ReactDOM.createRoot(document.getElementById('root')).render(
+  <React.StrictMode>
+    <Counter step={5} />
+  </React.StrictMode>
+);
